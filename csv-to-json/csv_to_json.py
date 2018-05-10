@@ -1,0 +1,28 @@
+import csv
+import json
+
+
+def csv_to_json():
+
+    # file = <input file>
+
+    with open(file, "r") as csvfile:
+        csv_list = []
+        reader = csv.reader(csvfile, delimiter=",")
+
+        for row in  reader:
+            csv_list.append(row)
+
+    csv_list.pop(0)
+
+    csv_dict = {}
+    for row in csv_list:
+        csv_dict[row[0]] = row[1]
+
+    jsonfile = open("../resources/json_info.json", "w")
+
+    json.dump(csv_dict, jsonfile, indent=4)
+
+
+if __name__ == "__main__":
+    csv_to_json()
