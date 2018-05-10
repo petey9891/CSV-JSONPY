@@ -3,6 +3,5 @@
 venv/
 ENV/
 
-# resources
-resources/*.json
-resources/*.csv
+
+

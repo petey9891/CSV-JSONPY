@@ -6,6 +6,7 @@ def csv_to_json():
 
     # file = <input file>
 
+
     with open(file, "r") as csvfile:
         csv_list = []
         reader = csv.reader(csvfile, delimiter=",")
