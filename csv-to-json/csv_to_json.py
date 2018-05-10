@@ -1,6 +1,9 @@
 import csv
 import json
 
+"""
+    Converts CSV file with two columns into JSON file with dictionary format
+"""
 
 def csv_to_json():
 
