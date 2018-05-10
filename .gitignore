@@ -3,5 +3,6 @@
 venv/
 ENV/
 
-
+# pycharm
+.idea
 
