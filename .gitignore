@@ -5,4 +5,5 @@ ENV/
 
 # pycharm
 .idea
+.idea/*
 
