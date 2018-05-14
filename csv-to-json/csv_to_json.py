@@ -16,6 +16,7 @@ def csv_to_json():
 
         for row in  reader:
             csv_list.append(row)
+    csvfile.close()
 
     csv_list.pop(0)
 
@@ -27,6 +28,7 @@ def csv_to_json():
 
     json.dump(csv_dict, jsonfile, indent=4)
 
+    jsonfile.close()
 
 if __name__ == "__main__":
     csv_to_json()
